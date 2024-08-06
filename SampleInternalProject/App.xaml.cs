@@ -4,11 +4,11 @@ namespace SampleInternalProject
 {
   public partial class App : Application
   {
-    [DllImport("__Internal",EntryPoint ="main")]
-    public static extern int main();
+    [DllImport("__Internal",EntryPoint ="SubMain")]
+    public static extern int SubMain();
     public App()
     {
-      main();
+      SubMain();
       InitializeComponent();
 
       MainPage = new AppShell();
